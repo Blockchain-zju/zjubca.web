@@ -1,7 +1,8 @@
 # zjubca.web
+
 Offcial website of ZJUBCA
 
-##  develop
+## develop
 
 ### project management
 
@@ -25,15 +26,4 @@ git cz
 Decided by developers. But there should be enough comments.
 
 ## deploy
-
-
-
-
-
-
-
-
-
-
-
 
