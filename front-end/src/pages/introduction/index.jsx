@@ -1,7 +1,14 @@
 import React from "react";
 import "./index.css";
-import { Title, TitleNm, TitleNm2, LinkNm } from "../../component/Utils/utils";
-
+import {
+  Title,
+  TitleNm,
+  TitleNm2,
+  LinkNm
+} from "../../component/Utils/utils";
+import { DataSet } from "../../content";
+const introduction =
+  DataSet.introduction;
 export const Intro = () => (
   <div className="zjubca-intro scFlexColumn">
     <Title
@@ -16,9 +23,7 @@ export const Intro = () => (
     />
     <TitleNm
       fs={14}
-      content={
-        "协会介绍协会介绍协会介绍协会介绍协会介绍协会介绍协会介绍协会介绍协会介绍协会介绍协会介绍协会介绍协会介绍协会介绍协会介绍协会介绍协会介绍协会介绍协会介绍协会介绍协会介绍协会介绍协会介绍协会介绍协会介绍协会介绍协会介绍协会介绍协会介绍协会介绍协会介绍协会介绍协会介绍协会介绍协会介绍协会介绍协会介绍协会介绍协会介绍协会介绍协会介绍协会介绍协会介绍协会介绍协会介绍协会介绍协会介绍协会介绍"
-      }
+      content={introduction.intro}
     />
     <TitleNm
       fs={20}
@@ -26,9 +31,7 @@ export const Intro = () => (
     />
     <TitleNm
       fs={14}
-      content={
-        "协会宗旨协会宗旨协会宗旨协会宗旨协会宗旨协会宗旨协会宗旨协会宗旨协会宗旨协会宗旨协会宗旨协会宗旨协会宗旨协会宗旨协会宗旨协会宗旨协会宗旨协会宗旨协会宗旨协会宗旨协会宗旨协会宗旨协会宗旨协会宗旨协会宗旨协会宗旨协会宗旨协会宗旨协会宗旨协会宗旨协会宗旨协会宗旨协会宗旨协会宗旨协会宗旨协会宗旨协会宗旨协会宗旨协会宗旨协会宗旨协会宗旨协会宗旨协会宗旨协会宗旨协会宗旨协会宗旨协会宗旨协会宗旨"
-      }
+      content={introduction.purpose}
     />
     <TitleNm
       fs={20}
@@ -54,15 +57,21 @@ export const Intro = () => (
     />
     <TitleNm2
       fs={14}
-      content={"协会公众号：ZJUBlockchain"}
+      content={
+        "协会公众号：ZJUBlockchain"
+      }
     />
     <TitleNm2
       fs={14}
-      content={"协会联系人：杨佳妮/1xxxxxxxxxxx"}
+      content={
+        "协会联系人：杨佳妮/1xxxxxxxxxxx"
+      }
     />
     <TitleNm2
       fs={14}
-      content={"协会邮箱：1xxxxxxxxxxx@zjubca.org"}
+      content={
+        "协会邮箱：1xxxxxxxxxxx@zjubca.org"
+      }
     />
   </div>
 );

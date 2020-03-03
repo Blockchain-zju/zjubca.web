@@ -1,20 +1,20 @@
-.zjubca-copyright{
-    background-color: #efefef;
-    width:80%;
-    padding:70px 10%;
-    height:200px;
+.zjubca-copyright {
+  background-color: #efefef;
+  width: 80%;
+  padding: 70px 10%;
+  height: 200px;
 }
-.zjubca-copyright-logo{
-    background-image: url(http://img.fishstar.xyz/logo);
-    background-repeat: no-repeat;
-    width:200px;
-    height:60px;
+.zjubca-copyright-logo {
+  background-image: url(http://img.fishstar.xyz/zjubca/logo);
+  background-repeat: no-repeat;
+  width: 200px;
+  height: 60px;
 }
-.zjubca-copyright-logo-bar{
-    width:40%;
-    height:100%;
+.zjubca-copyright-logo-bar {
+  width: 40%;
+  height: 100%;
 }
-.zjubca-copyright-word{
-    width:60%;
-    height:100%;
+.zjubca-copyright-word {
+  width: 60%;
+  height: 100%;
 }

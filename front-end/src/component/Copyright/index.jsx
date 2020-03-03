@@ -1,51 +1,8 @@
 import React from "react";
 import "./index.css";
 import "../../css/common.css";
-const foot = [
-  {
-    name: "版权所有",
-    content: [
-      {
-        name: "浙江大学区块链协会",
-        link: ""
-      }
-    ]
-  },
-  {
-    name: "友情链接",
-    content: [
-      {
-        name: "浙大主页",
-        link: "https://www.zju.edu.cn"
-      },
-      {
-        name: "CC98",
-        link: "https://www.cc98.org"
-      },
-      
-    ]
-  },
-  {
-    name: "相关产品",
-    content: [
-      {
-        name: "区块链钱包",
-        link:
-          "https://github.com/Blockchain-zju/zjubca.wallet/tree/master"
-      },
-      {
-        name: "EOSToolkit",
-        link:
-          "https://toolkit.zjubca.org/"
-      },
-      {
-        name: "区块链SDK",
-        link:
-          "https://github.com/Blockchain-zju/zjubca-scatter-js"
-      }
-    ]
-  }
-];
+import { DataSet } from "../../content";
+const foot = DataSet.common.foot;
 const foot2Div = foot => (
   <div
     className="ssFlexColumn"
