@@ -1,0 +1,47 @@
+.zjubca-navigation {
+  /* 位置 */
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 100;
+
+  /*尺寸*/
+  width: 100vw;
+  height: 64px;
+
+  color: white;
+}
+.zjubca-navigation:hover {
+  background-color: #efefef;
+  color: #222;
+}
+.zjubca-navigation-content {
+  width: calc(100vw - 24px);
+  height: 100%;
+  max-width: 1200px;
+}
+.zjubca-logo {
+  width: 150px;
+  height: 48px;
+}
+.logoOut {
+  background-image: url(http://img.fishstar.xyz/zjubca/logo-white);
+}
+.logoIn {
+  background-image: url(http://img.fishstar.xyz/zjubca/logo);
+}
+.zjubca-function {
+  width: 400px;
+  height: 100%;
+}
+.zjubca-function-item {
+  width: 70px;
+  height: 100%;
+}
+.show {
+  background-color: #efefef;
+}
+.disappear {
+  /* background-color:rgba(0,0,0,0); */
+  background-color: #1b1f25;
+}
