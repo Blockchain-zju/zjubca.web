@@ -7,8 +7,10 @@ import {
   LinkNm
 } from "../../component/Utils/utils";
 import { DataSet } from "../../content";
+import {QRcode} from '../../component/qrcode/index'
 const introduction =
   DataSet.introduction;
+
 export const Intro = () => (
   <div className="zjubca-intro scFlexColumn">
     <Title
@@ -37,7 +39,9 @@ export const Intro = () => (
       fs={20}
       content={"联系我们"}
     />
-    <TitleNm2
+    <div className="ssFlexRow" style={{width:"100%"}}>
+      <div style={{width:"60%"}}>
+      <TitleNm2
       fs={14}
       content={
         "协会负责人：孙伟杰 楼嵩 孔唯洁"
@@ -73,5 +77,8 @@ export const Intro = () => (
         "协会邮箱：1xxxxxxxxxxx@zjubca.org"
       }
     />
+      </div>
+      <QRcode width={40}/>
+    </div>
   </div>
 );

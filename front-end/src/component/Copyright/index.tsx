@@ -2,8 +2,10 @@ import React from "react";
 import "./index.css";
 import "../../css/common.css";
 import { DataSet } from "../../content";
+import {IFootItem,IFootItemContent} from '../../types/Ifoot'
 const foot = DataSet.common.foot;
-const foot2Div = foot => (
+
+const foot2Div = (foot:IFootItem) => (
   <div
     className="ssFlexColumn"
     style={{
@@ -13,7 +15,7 @@ const foot2Div = foot => (
     }}
   >
     {foot.name}
-    {foot.content.map(content => (
+    {foot.content.map((content:IFootItemContent) => (
       <div
         className="ssFlexColumn"
         style={{
@@ -45,6 +47,7 @@ export const Copyright = () => (
     className="ccFlexColumn"
     style={{ width: "100%" }}
   >
+    
     <div className="zjubca-copyright scFlexRow">
       <div className="zjubca-copyright-word ssFlexRow">
         {foot.map(foot2Div)}{" "}

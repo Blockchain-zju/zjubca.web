@@ -26,7 +26,7 @@
 .zjubca-index-introduction p {
   font-size: 30px;
   text-align: center;
-  font-family: "chenwixun-jian1f1feb1b551df4b";
+  /* font-family: "chenwixun-jian1f1feb1b551df4b"; */
 }
 .zjubca-index-product {
   width: calc(100% - 48px);

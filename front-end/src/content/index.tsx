@@ -210,16 +210,24 @@ export const DataSet = {
   product: [
     {
       name: "ZJUBCA区块链钱包",
+      picture:
+        "http://img.fishstar.xyz/zjubca/logo-white",
       link:
-        "https://github.com/Blockchain-zju/zjubca.wallet/tree/master"
+        "https://github.com/Blockchain-zju/zjubca.wallet/tree/master",
+      intro:"暂无简介暂无简介暂无简介暂无简介暂无简介暂无简介暂无简介暂无简介暂无简介暂无简介暂无简介暂无简介暂无简介暂无简介暂无简介暂无简介暂无简介暂无简介暂无简介暂无简介暂无简介暂无简介暂无简介暂无简介暂无简介暂无简介",
+      display:"https://space.bilibili.com/11818196"
     },
     {
       name: "区块链管理器EOSToolkit",
+      picture:
+        "http://img.fishstar.xyz/zjubca/logo-white",
       link:
         "https://toolkit.zjubca.org/"
     },
     {
       name: "基于scatter的区块链SDK",
+      picture:
+        "http://img.fishstar.xyz/zjubca/logo-white",
       link:
         "https://github.com/Blockchain-zju/zjubca-scatter-js"
     }

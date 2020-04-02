@@ -1,5 +1,13 @@
 import React from "react";
-export const Title = props => (
+interface ITitle {
+  fs: number;
+  fw: number|"bold"|"normal";
+  ta?: "left" | "right";
+  content: string;
+}
+export const Title = (
+  props: ITitle
+) => (
   <div
     style={{
       fontSize: props.fs,
@@ -14,7 +22,10 @@ export const Title = props => (
     {props.content}
   </div>
 );
-export const TitleNm = props => (
+export const TitleNm = (props: {
+  fs: number;
+  content: string;
+}) => (
   <div
     style={{
       fontSize: props.fs,
@@ -29,7 +40,10 @@ export const TitleNm = props => (
     {props.content}
   </div>
 );
-export const TitleNm2 = props => (
+export const TitleNm2 = (props: {
+  fs: number;
+  content: string;
+}) => (
   <div
     style={{
       fontSize: props.fs,
@@ -42,12 +56,24 @@ export const TitleNm2 = props => (
     {props.content}
   </div>
 );
-export const LinkNm = props => (
+interface ILinkNm {
+  fs: number;
+  content?: string;
+  right?: boolean;
+  contentBefore?: string;
+  href?: string;
+  contentAfter?: string;
+}
+export const LinkNm = (
+  props: ILinkNm
+) => (
   <div
     style={{
       fontSize: props.fs,
       fontWeight: "normal",
-      textAlign: "left",
+      textAlign: props.right
+        ? "right"
+        : "left",
       width: "100%",
       margin: `2px 0px`
     }}

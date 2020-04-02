@@ -1,10 +1,11 @@
 import React from "react";
 import "./index.css";
 import "../../css/common.css";
+import { INewItem } from '../../types/INew'
 import { DataSet } from "../../content";
 
 const news = DataSet.news;
-const news2Div = news => (
+const news2Div = (news:INewItem) => (
   <div className="zjubca-news-item ccFlexColumn">
     <div className="zjubca-news-item-title scFlexRow">
       <a

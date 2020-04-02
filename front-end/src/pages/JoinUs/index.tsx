@@ -2,14 +2,17 @@ import React from "react";
 import "./index.css";
 import {
   TitleNm,
-  Title
+  Title,
+  LinkNm
 } from "../../component/Utils/utils";
 import { DataSet } from "../../content";
+import { QRcode } from "../../component/qrcode";
 
 const joinus = DataSet.joinus;
 export const JoinUs = () => (
   <div className="zjubca-joinus scFlexRow">
     <div style={{ width: "50%" }}>
+      <QRcode width={60}/>
       <Title
         fs={32}
         fw={"bold"}
@@ -19,6 +22,13 @@ export const JoinUs = () => (
         fs={14}
         content={joinus.word}
       />
+      <LinkNm
+      fs={14}
+      href={
+        "https://github.com/Blockchain-zju"
+      }
+      contentAfter={"纳新推文链接"}
+    />
     </div>
     <div
       className="scFlexColumn"

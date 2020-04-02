@@ -3,10 +3,11 @@ import "./index.css";
 import "../../css/common.css";
 import { Link } from "react-router-dom";
 import { DataSet } from "../../content";
+import {IPageItem} from '../../types/IPage'
 const functs = DataSet.common.pages;
-export class Navigation extends React.Component {
-  constructor() {
-    super();
+export class Navigation extends React.Component<any,any> {
+  constructor(props:any) {
+    super(props);
     this.state = {
       hoverIn: false,
       onTrick: false
@@ -18,7 +19,7 @@ export class Navigation extends React.Component {
       this.handleScroll
     );
   }
-  handleScroll = e => {
+  handleScroll = () => {
     if (window.scrollY >= 738)
       this.setState({ onTrick: true });
     else if (window.scrollY < 738)
@@ -33,7 +34,7 @@ export class Navigation extends React.Component {
     console.log(!hoverIn);
   };
 
-  functs2div = (item, key) => (
+  functs2div = (item:IPageItem, key:number) => (
     <div className="zjubca-function-item ccFlexColumn">
       <Link
         to={item.link}
@@ -71,6 +72,9 @@ export class Navigation extends React.Component {
                 : "logoOut"
             }`}
           />
+          <div className="zjubca-title scFlexRow">
+            浙江大学区块链协会
+          </div>
           <div className="zjubca-function ccFlexRow">
             {functs.map(
               this.functs2div

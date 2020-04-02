@@ -4,6 +4,12 @@
   background-position: center center;
   background-repeat: no-repeat;
 }
+/* 自适应背景模版 */
+.fitBG {
+	background-size: 100% 100%;
+	background-position: center center;
+	background-repeat: no-repeat;
+  }
 /* 满宽 */
 .fullWidth {
   width: 100%;
@@ -14,121 +20,304 @@
   background-color: chocolate;
 }
 
-/*常见的几种Flex-Column布局*/
-.ccFlexColumn {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+/*常见的几种Flex布局*/
+.eeFlexRow{
+	display:flex;
+	flex-direction:row;
+	justify-content:flex-end;
+	align-items:flex-end;
 }
-.csFlexColumn {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
+.ecFlexRow{
+	display:flex;
+	flex-direction:row;
+	justify-content:flex-end;
+	align-items:center;
 }
-.ceFlexColumn {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-end;
+.esFlexRow{
+	display:flex;
+	flex-direction:row;
+	justify-content:flex-end;
+	align-items:flex-start;
 }
-.cbFlexColumn {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: space-between;
+.ebFlexRow{
+	display:flex;
+	flex-direction:row;
+	justify-content:flex-end;
+	align-items:space-between;
 }
-.caFlexColumn {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: space-around;
+.eaFlexRow{
+	display:flex;
+	flex-direction:row;
+	justify-content:flex-end;
+	align-items:space-around;
 }
-.scFlexColumn {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
+.ceFlexRow{
+	display:flex;
+	flex-direction:row;
+	justify-content:center;
+	align-items:flex-end;
 }
-.ssFlexColumn {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
+.ccFlexRow{
+	display:flex;
+	flex-direction:row;
+	justify-content:center;
+	align-items:center;
 }
-.ecFlexColumn {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: center;
+.csFlexRow{
+	display:flex;
+	flex-direction:row;
+	justify-content:center;
+	align-items:flex-start;
 }
-.bcFlexColumn {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
+.cbFlexRow{
+	display:flex;
+	flex-direction:row;
+	justify-content:center;
+	align-items:space-between;
 }
-
-/*常见的几种Flex-Row布局*/
-.scFlexRow {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: center;
+.caFlexRow{
+	display:flex;
+	flex-direction:row;
+	justify-content:center;
+	align-items:space-around;
 }
-.acFlexRow {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
+.seFlexRow{
+	display:flex;
+	flex-direction:row;
+	justify-content:flex-start;
+	align-items:flex-end;
 }
-.bcFlexRow {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+.scFlexRow{
+	display:flex;
+	flex-direction:row;
+	justify-content:flex-start;
+	align-items:center;
 }
-.ssFlexRow {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: flex-start;
+.ssFlexRow{
+	display:flex;
+	flex-direction:row;
+	justify-content:flex-start;
+	align-items:flex-start;
 }
-.ecFlexRow {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  align-items: center;
+.sbFlexRow{
+	display:flex;
+	flex-direction:row;
+	justify-content:flex-start;
+	align-items:space-between;
 }
-.eeFlexRow {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  align-items: flex-end;
+.saFlexRow{
+	display:flex;
+	flex-direction:row;
+	justify-content:flex-start;
+	align-items:space-around;
 }
-.esFlexRow {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  align-items: flex-start;
+.beFlexRow{
+	display:flex;
+	flex-direction:row;
+	justify-content:space-between;
+	align-items:flex-end;
 }
-
-.ccFlexRow {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+.bcFlexRow{
+	display:flex;
+	flex-direction:row;
+	justify-content:space-between;
+	align-items:center;
 }
-.ceFlexRow {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: flex-end;
+.bsFlexRow{
+	display:flex;
+	flex-direction:row;
+	justify-content:space-between;
+	align-items:flex-start;
 }
-.seFlexRow {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: flex-end;
+.bbFlexRow{
+	display:flex;
+	flex-direction:row;
+	justify-content:space-between;
+	align-items:space-between;
+}
+.baFlexRow{
+	display:flex;
+	flex-direction:row;
+	justify-content:space-between;
+	align-items:space-around;
+}
+.aeFlexRow{
+	display:flex;
+	flex-direction:row;
+	justify-content:space-around;
+	align-items:flex-end;
+}
+.acFlexRow{
+	display:flex;
+	flex-direction:row;
+	justify-content:space-around;
+	align-items:center;
+}
+.asFlexRow{
+	display:flex;
+	flex-direction:row;
+	justify-content:space-around;
+	align-items:flex-start;
+}
+.abFlexRow{
+	display:flex;
+	flex-direction:row;
+	justify-content:space-around;
+	align-items:space-between;
+}
+.aaFlexRow{
+	display:flex;
+	flex-direction:row;
+	justify-content:space-around;
+	align-items:space-around;
+}
+.eeFlexColumn{
+	display:flex;
+	flex-direction:column;
+	justify-content:flex-end;
+	align-items:flex-end;
+}
+.ecFlexColumn{
+	display:flex;
+	flex-direction:column;
+	justify-content:flex-end;
+	align-items:center;
+}
+.esFlexColumn{
+	display:flex;
+	flex-direction:column;
+	justify-content:flex-end;
+	align-items:flex-start;
+}
+.ebFlexColumn{
+	display:flex;
+	flex-direction:column;
+	justify-content:flex-end;
+	align-items:space-between;
+}
+.eaFlexColumn{
+	display:flex;
+	flex-direction:column;
+	justify-content:flex-end;
+	align-items:space-around;
+}
+.ceFlexColumn{
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	align-items:flex-end;
+}
+.ccFlexColumn{
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	align-items:center;
+}
+.csFlexColumn{
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	align-items:flex-start;
+}
+.cbFlexColumn{
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	align-items:space-between;
+}
+.caFlexColumn{
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	align-items:space-around;
+}
+.seFlexColumn{
+	display:flex;
+	flex-direction:column;
+	justify-content:flex-start;
+	align-items:flex-end;
+}
+.scFlexColumn{
+	display:flex;
+	flex-direction:column;
+	justify-content:flex-start;
+	align-items:center;
+}
+.ssFlexColumn{
+	display:flex;
+	flex-direction:column;
+	justify-content:flex-start;
+	align-items:flex-start;
+}
+.sbFlexColumn{
+	display:flex;
+	flex-direction:column;
+	justify-content:flex-start;
+	align-items:space-between;
+}
+.saFlexColumn{
+	display:flex;
+	flex-direction:column;
+	justify-content:flex-start;
+	align-items:space-around;
+}
+.beFlexColumn{
+	display:flex;
+	flex-direction:column;
+	justify-content:space-between;
+	align-items:flex-end;
+}
+.bcFlexColumn{
+	display:flex;
+	flex-direction:column;
+	justify-content:space-between;
+	align-items:center;
+}
+.bsFlexColumn{
+	display:flex;
+	flex-direction:column;
+	justify-content:space-between;
+	align-items:flex-start;
+}
+.bbFlexColumn{
+	display:flex;
+	flex-direction:column;
+	justify-content:space-between;
+	align-items:space-between;
+}
+.baFlexColumn{
+	display:flex;
+	flex-direction:column;
+	justify-content:space-between;
+	align-items:space-around;
+}
+.aeFlexColumn{
+	display:flex;
+	flex-direction:column;
+	justify-content:space-around;
+	align-items:flex-end;
+}
+.acFlexColumn{
+	display:flex;
+	flex-direction:column;
+	justify-content:space-around;
+	align-items:center;
+}
+.asFlexColumn{
+	display:flex;
+	flex-direction:column;
+	justify-content:space-around;
+	align-items:flex-start;
+}
+.abFlexColumn{
+	display:flex;
+	flex-direction:column;
+	justify-content:space-around;
+	align-items:space-between;
+}
+.aaFlexColumn{
+	display:flex;
+	flex-direction:column;
+	justify-content:space-around;
+	align-items:space-around;
 }
